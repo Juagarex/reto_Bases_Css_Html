@@ -1,0 +1,19 @@
+{
+  "name": "reto-css-html",
+  "version": "1.0.0",
+  "description": "creacion de copia de view con css html y entre otras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "html"
+  ],
+  "author": "Juan Corredor",
+  "license": "MIT",
+  "dependencies": {
+    "flickity": "^2.2.1",
+    "swiper": "^6.0.4"
+  }
+}
