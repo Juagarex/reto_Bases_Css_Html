@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
- html, body{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    width:100%
-}
+ 
 
 .debuger{
     border: 1px red solid;
@@ -544,59 +537,7 @@ body html{
 
      }
 
-     @media  screen and (max-width:1024px){
-
-
-        .container__mediun--description--text{
-        
-            width: 80%;   /* 1024px = 80    // mayor = 50*/
-
-        }
-
-        .image__section--image{
-            position: absolute;      
-            left: 20%;
-            width: 50%;  
-        }
-        .hero__section--menssage{
-            width: 30%; 
-            
-        }
-        .hero__section--selector{
-            align-items: flex-end;
-
-        }
-
-        .hero__section--selector .center{
-            margin-right: 0px;
-        }
-        .button_explore{
-            height: fit-content;
-            padding: 11px;
-        }
-        .item__carousel--image img{
-            width: 90%;
-        }
-
-
-
-
-
-     }
-
      
-     @media  screen and (max-width:767px){
-         
-        .list_footer ol{
-            padding-inline-start: .5em;
-            text-align: center;
-
-        }
-
-
-
-     }
-
      .mobile{
          display: flex;
          color: white;
@@ -610,13 +551,13 @@ body html{
      .container__mobile{
          display: flex;
          width: 100%;
-     }
+        }
 
 
      .mobile__img{
          display: flex;
          width: 60%;
-     }
+        }
 
      .hero__mobile{
          width: 60%;
@@ -639,7 +580,7 @@ body html{
          justify-content: space-around;
          font-family: 'Francois One', sans-serif;
      }
-
+     
      .button_appstore{
         font-family: 'Francois One', sans-serif;
          display: flex;
@@ -650,7 +591,7 @@ body html{
          align-items: center;
          justify-content: center;
 
-     }
+        }
 
 
      .button_GooglePlay{
@@ -677,7 +618,7 @@ body html{
          
      }
 
-
+     
      .list__container--footer {
          display: flex;
       justify-content: space-between;
@@ -733,35 +674,176 @@ body html{
         
      }
 
-   
+     @media  screen and (max-width:1024px){
 
+
+        .container__mediun--description--text{
+        
+            width: 80%;   /* 1024px = 80    // mayor = 50*/
+
+        }
+
+        .image__section--image{
+            position: absolute;      
+            left: 20%;
+            width: 50%;  
+        }
+        .hero__section--menssage{
+            width: 30%; 
+            
+        }
+        .hero__section--selector{
+            align-items: flex-end;
+
+        }
+
+        .hero__section--selector .center{
+            margin-right: 0px;
+        }
+        .button_explore{
+            height: fit-content;
+            padding: 11px;
+        }
+        .item__carousel--image img{
+            width: 90%;
+        }
+
+
+
+
+
+     }
+
+     
+     @media  screen and (max-width:768px){
+         
+        .list_footer ol{
+            padding-inline-start: .5em;
+            text-align: center;
+
+        }
+
+
+
+
+     }
+
+
+     @media  screen and (min-width:319px)  and (max-width:467px){
+         .hero__section--social{
+             display: none;
+         }
+
+       .menu-nav-left{
+           margin-left: -1pc;
+       }
+         .menu-nav-rigth{
+             display: none;
+         }
+
+         .hero__section--selector{
+             display: none;
+         }
+
+
+         .container__section-mediun{
+             display: block;
+
+         }
+         .container__mediun--image{
+             width: 75%;
+         }
+         .container__mediun--description{
+             width: 100%;
+             margin: 0;
+         }
+         .image__section--image{
+             left: 0;
+             width: 100%;
+         }
+
+
+         .descriptionPrice{
+             display: block;
+         }
+         .menu__tittle h1{
+             font-size: 35px;
+             text-align: center;
+         }
+
+         .item__menu{
+             width: 30%;
+         }
+         .itemTitle h1{
+             font-size: .9em;
+         }
+
+         .container_recipes{
+             display: block;
+
+         }
+
+         .container__recibes--image{
+             width: 95%;
+         }
+         .container__recibes--description{
+             width: 80%;
+             justify-content: center;
+            
+         }
+
+         
+         .footer{
+             display:block;
+             justify-content: center;
+             width: 100%;
+
+         }
+
+         .container__footer--info{
+             display: flex;
+             justify-content: center;
+             width: 100%;
+             padding: 7px;
+             margin: 5px;
+         }
+         .container__img--footer img{
+             width: 80%;
+         }
+
+
+
+     }
+   
+     
 
 
 
   
-    
+     
 
-
-
-    
+     
 
     
-
+     
+    
+     
     
 
+     
 
 
+     
+
+     
+
+     
 
 
+     
+     
 
 
+     
 
-  
-
-
-   
-
-
-
-
-
+     
