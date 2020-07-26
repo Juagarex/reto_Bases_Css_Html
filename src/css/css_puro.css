@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
+ html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width:100%
+}
+
 .debuger{
     border: 1px red solid;
 }
@@ -227,7 +236,7 @@ body html{
     }
 
     .item__carousel--image img{
-        width: 80%;
+        width: 70%;
         height: auto;
         object-fit: cover;
 
@@ -296,7 +305,11 @@ body html{
         display: block;
         width: 50%; 
         height: auto ;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-style: ridge;
+        border-radius: 5%;
+       
     }
     #subtipico{
         font-size: .6em ;
@@ -561,8 +574,24 @@ body html{
             height: fit-content;
             padding: 11px;
         }
+        .item__carousel--image img{
+            width: 90%;
+        }
 
 
+
+
+
+     }
+
+     
+     @media  screen and (max-width:767px){
+         
+        .list_footer ol{
+            padding-inline-start: .5em;
+            text-align: center;
+
+        }
 
 
 
@@ -637,6 +666,81 @@ body html{
          width: 100%;
 
      }
+
+
+
+     .footer{
+         width: 100%;
+         display: flex;
+         justify-content: space-around;
+
+         
+     }
+
+
+     .list__container--footer {
+         display: flex;
+      justify-content: space-between;
+
+     }
+
+     .container__footer--info{
+         display: flex;
+         justify-content: space-around;
+         width: 50%;
+
+     }
+     .container__footer--info p{
+         display: flex;
+        align-items: center;
+      
+     }
+     .container__img--footer{
+         width: 200px;
+         display: flex;
+         height:  0 auto;
+         object-fit: cover;
+     }
+     .container__img--footer img{
+         width: 100%;
+         object-fit: contain;
+     }
+
+
+
+     .list_footer__social{
+         display: flex;
+         align-items: center;        
+     }
+
+     .list_footer li{
+         list-style: none;
+         margin: 15px 0;
+         align-items: center;
+         
+     }
+     .list_footer a{
+         font-family: 'Francois One', sans-serif;;
+         text-decoration: none;
+         color: rgba(54, 51, 51, 0.863);
+     }
+
+    
+     #mail img{
+         width: 30px;
+         height: 30px;
+         margin: 10px;
+        
+     }
+
+   
+
+
+
+
+  
+    
+
 
 
     
