@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
- *body{
-    font-family: 'Francois One', sans-serif;
+ body{
+    background:  linear-gradient(#fefcf7a2,#ffffff);
+    /* background: linear-gradient(calc(100vh - 100px) #fefcf7,#ffffff); */
  }
 
 .debuger{
@@ -17,10 +20,8 @@ body html{
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    border: #413a3a ;
-    border-style: dashed;
     border-radius: 15px;
-    background-color: rgba(240, 255, 255, 0.411);
+   
 }
 /* section left del menu nav */
 .menu-nav-left{
@@ -74,7 +75,7 @@ body html{
 
  .button__reservation{
      font-size: 10px;
-     background-color:#ffc246;
+     background-color:#ffbe00;
      display: block;
      text-align:center;
      width: 123px;
@@ -90,29 +91,38 @@ body html{
      position: relative;
      justify-content:space-between;
      font-size: 32px;
+     min-height: 600px;
     }
 
     .hero__section--menssage{
-        width: 40%; 
-        height: 450px;
+        width: 32%; 
         margin-left:  20px;
         padding-left: 20px;
         font-size: 1.5em;
         font-family: 'Francois One', sans-serif;
         z-index: 2;
     }
-    .button_explore{
-        font-size: 15px;
+
+    .hero__section--menssage h1{
+        margin: 20px;
+    }
+    .button_explore{ 
+         display: flex;
+        font-size: 10px;
+        letter-spacing: 1px;
         background-color:black;
-        display: block;
         text-align:center;
-        width: 155px;
+        width: 165px;
         height: 60px;
         margin: 0px 25px;
         border-radius: 40px;
         color: yellow;
         outline: none;
         margin-top: 10px;
+        padding: 5px;
+      align-items: center;
+        justify-content: center;
+
     }
 
     .image__section--image{
@@ -121,7 +131,7 @@ body html{
         width: 40%;  
         top:0;
         bottom:0;
-        background-image: url('../images/hero.png');
+        background-image: url('../images/pechuga.png');
         background-repeat: none;
         background-size: cover;
         background-position: center;
@@ -160,6 +170,7 @@ body html{
 
     margin-right: 50px;
         align-self: flex-end;
+
     }
 
     
@@ -169,13 +180,14 @@ body html{
         
         width:25%;
         align-items: center;
+        justify-content: center;
         
     }
     .container_red_social{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        align-items: flex-end;
+        margin-left: 30px;
         height: 70%;
         align-content: space-between;
         margin-right:25px;
@@ -183,11 +195,23 @@ body html{
         
     }
     .icon_face, .icon_instagram, .icon_twitter{
-        
-        width: 40px;
-        height: 40px;
-        margin: 25px ;
+        border-radius: 50%;
+        background-color: #ffffff;
+        width: 35px;
+        height: 35px;
+        margin: 40px;
 
+    }
+
+    .icon_face img, .icon_instagram img, .icon_twitter img{
+        width: 100%;
+    }
+
+
+
+    .swiper-container {
+        width: 220px;
+        height: 72%;
     }
     
 
@@ -195,13 +219,11 @@ body html{
     .carousel{
         width: 100%;
         display: flex;
-        height: 250px;
-        padding: 10px;
+        height: 0 auto;
+        padding: 5px;
     }
     .container__carousel{
         border-radius: 15px;
-        border-style: dotted;
-        border-color: #413a3a;
         width: 80%;
         padding: 10px;
         margin:  0 auto;
@@ -215,37 +237,51 @@ body html{
         border-radius: 25px;
         border: 1px solid black;
         margin: 20px;
-        min-width: 150px;
-        max-width: 380px;
-        height: auto;
+        min-width: 220px;
+        max-width: 180px;
+        height: 0 auto;
 
         
         
     }
 
     .item__carousel--image{
-        margin: 5px;
-        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 3px;
+        width: 35%;
         
        
     }
 
     .item__carousel--image img{
-        width: 70%;
+        width: 80%;
         height: auto;
         object-fit: cover;
 
          }
      
     .item__carousel--description{
+        font-size: 15px;
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 70%;
         margin: 5px;
         text-align: center;
+        padding:5px;
+        justify-content: space-between;
+
         
     }
 
+    .item__carousel--description span{
+        text-align: start;
+        margin: 5px;
+        font-weight: 600;
+    }
+
+ 
     .section__medium{
         display :flex;
         justify-content: center;
@@ -262,6 +298,7 @@ body html{
         
     }
     .container__mediun--image{
+        display: flex;
         width: 60%;
         height: 0 auto;
         overflow: hidden;
@@ -270,12 +307,14 @@ body html{
         background-position: center;
         background-repeat: none;
         border-radius: 30%;
+        justify-content: flex-end;
+        
         
     }
 
     .container__mediun--image img{
        
-        width: 100%;
+        width: 70%;
         
     }
 
@@ -290,7 +329,7 @@ body html{
         justify-content: center;
         text-align: center;
         align-content: space-between;
-        width: 60%;
+        width: 50%;
        
 
 
@@ -302,13 +341,17 @@ body html{
         height: auto ;
         margin-bottom: 20px;
         padding: 10px;
-        border-style: ridge;
-        border-radius: 5%;
+        font-family: 'Fjalla One', sans-serif;
        
+    }
+
+    .container__mediun--description--text p{
+        text-align: left;
     }
     #subtipico{
         font-size: .6em ;
         margin-bottom: 25px;
+        font-family: 'Fjalla One', sans-serif;
     }
 
     .container__mediun--description--text img{
@@ -320,17 +363,18 @@ body html{
       
         font-size: 13px;
         background-color:black;
-        display: block;
+        display: flex;
         text-align:center;
         width: 185px;
-        height: 60px;
+        height:  45px ;
         margin: 30PX;
         border-radius: 40px;
         color: yellow;
         overflow: hidden;
-        justify-self: center;
+        
         outline: none;
-    
+    align-items: center;
+        
 
     }
 
@@ -362,7 +406,7 @@ body html{
         display: flex;
         width: 100%;
         height: 0 auto;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
@@ -375,7 +419,39 @@ body html{
         justify-content: center;
         text-align: center;
         border-radius: 15%;
-        border:1px solid #413a3a;
+        
+        
+    }
+
+    .item__menu--img{
+       
+        width: 100%;
+        height: 60%;
+    }
+
+    .item__menu--description{
+        padding: 5px 1px;
+        padding-left: 20%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+       
+        height: 50%;
+        font-family: 'Francois One', sans-serif;
+        font-size: 25px;
+
+    }
+
+    .item__menu--description span:nth-of-type(1) {
+        font-size:0.9em ;
+    }
+    .item__menu--description span:nth-of-type(2){
+        font-size: 0.9em;
+    }
+    .item__menu--description button:first-of-type{
+        font-size: 0.4em;
     }
 
     .item__menu img{
@@ -402,7 +478,8 @@ body html{
     .button__recetas{
         font-size: 13px;
         background-color:black;
-        display: block;
+        display: flex;
+        align-items: center;
         text-align:center;
         width: 185px;
         height: 60px;
@@ -416,17 +493,29 @@ body html{
 
     }
 
+
+    .section__mostPopular{
+        margin-top: 50px;
+    }
+    .mostPopular{
+        box-shadow: 20px 17px 5px -2px rgba(224,224,224,1);
+    }
+
     .container__mostPopular{
         display: flex;
         width: 100%;
         height: 0 auto;
-        justify-content: space-around;
+        justify-content:space-around;
+        margin-top: 50px;
 
     }
+    
+
+
 
     .mostPopular img {
         background-color: rgb(240, 240, 226);
-        border-radius: 10%;
+        border-radius: 46%;
         width: 80%;
         height: 0 auto;
         padding: 0 auto;
@@ -434,47 +523,22 @@ body html{
         object-fit: cover;
     }
 
-    .mostPopular{
-        background-color: rgb(255, 255, 255);
-        border-radius: 8%;
-    }
 
 
-    .descriptionItem{
-        display: flex;
-        flex-direction: column;
-        margin-top: -20px;
- 
-    }
-    .descriptionItem a{
-        font-size: 15px;
-        color: red;
-
-        
-
-    }
-
-    .itemTitle h1{
-         margin: 1px;
-    }
-     .descriptionPrice{
-         align-items: center;
-         display: flex;
-         justify-content: space-around;
-     }
-     .descriptionPrice p {
-         color: rgb(236, 233, 16);
-         font-weight: 500;
-     }
 
      .button__addCart{
-         font-size: .5em;
-         background-color:#cec2c29f;
-         margin: 5px;
+         font-size: .4em;
+         background-color:#e4dede2a;
+         margin: 15px;
          border-radius: 10px;
-         width: 75px;
+         width: 90px;
          height: 25px;
          outline: none;
+         font-family: 'Roboto Slab', serif;
+         letter-spacing: 0.5px;
+         color: rgb(168, 168, 153);
+       
+
          
      }
 
@@ -505,38 +569,56 @@ body html{
      }
      .header_recibes{
          display: inline-flex;
-         justify-content: space-around;
+         justify-content: center;
          align-items: center;
          justify-self: center;
          width: 100%;
          font-size: 1em;
-         border: 1px solid black ;
-         border-style: dotted;
+
+         
      }
      .profile{
-         width: 50px;
-         height: 50px; 
+         width: 20%;
+         height: 0 auto; 
          margin: 5px;
-         border: 1px solid black;
-         border-radius: 50%;
+         padding: 5px;
+        border: 1px solid;        
+         border-radius:50%;
+         display: flex;
+         justify-content: center;
      }
 
      .profile img{
          height: 0 auto;
-         width: 100%;
-         overflow: cover;
+         width: 80%;
+         
+         
      }
+
+     .description--profile{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: 0.7em;
+     }
+     .description--profile h1{
+         margin:10px;
+     }
+     .description--profile span{
+         color: rgb(168, 168, 153);
+             }
+
 
      .container__recibes--description{
          width: 40%;
          margin: 25px;
          padding: 20px;
-         font-size: .5em;
+         font-size: 0.8em;
          letter-spacing: .1rem;
          border-radius: 15px;
-         border-style: dashed;
-         border-color: aquamarine;
-
+         line-height: 50px;
+         word-spacing: 9px;
+    
      }
 
      
@@ -549,6 +631,18 @@ body html{
          
          background-color: black;
 
+     }
+
+     .mobile-text{
+         display: flex;
+         justify-content: flex-end;
+     }
+
+     .mobile-text span{
+         font-size: 1.5em;
+     }
+     .mobile-text h1{
+         letter-spacing: 1px;
      }
      .container__mobile{
          display: flex;
@@ -586,12 +680,12 @@ body html{
      .button_appstore{
         font-family: 'Francois One', sans-serif;
          display: flex;
-         height: fit-content;
+         height: 50px;
          border-radius: 15px;
          display: inline-flex;
-         background-color: aliceblue;
          align-items: center;
          justify-content: center;
+
 
         }
 
@@ -602,7 +696,7 @@ body html{
          justify-content: center;
          align-items: center;
          border-radius: 15px;
-         height: fit-content;
+         height: 50px;
      }
 
      .mobile__container--img img{
@@ -613,9 +707,11 @@ body html{
 
 
      .footer{
+         padding: 50px 0;
          width: 100%;
          display: flex;
          justify-content: space-around;
+         background-color: #f8f6f1;
 
          
      }
@@ -636,6 +732,8 @@ body html{
      .container__footer--info p{
          display: flex;
         align-items: center;
+        color: #657180;
+        font-size: 1.5em;
       
      }
      .container__img--footer{
@@ -691,7 +789,7 @@ body html{
             width: 50%;  
         }
         .hero__section--menssage{
-            width: 30%; 
+            width: 100%; 
             
         }
         .hero__section--selector{
@@ -743,6 +841,11 @@ body html{
              display: none;
          }
 
+
+         .hero__section--menssage h1{
+             margin: 0px;
+             font-size: 45px;
+         }
          .hero__section--selector{
              display: none;
          }
@@ -796,6 +899,7 @@ body html{
 
          
          .footer{
+        
              display:block;
              justify-content: center;
              width: 100%;
