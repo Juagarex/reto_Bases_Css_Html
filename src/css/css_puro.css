@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
  body{
-    background:  linear-gradient(#fefcf7a2,#ffffff);
+    background-color:  linear-gradient(snow,#ffffff);
     /* background: linear-gradient(calc(100vh - 100px) #fefcf7,#ffffff); */
  }
 
@@ -153,16 +153,22 @@ body html{
 
     .selector{
         display: flex;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
         margin: auto;
         object-fit: cover;
+        
         
     }
 
     .selector  img{
+        border-radius: 50%;
         width: 100%;
         
+    }
+
+    .selector img:hover{
+        box-shadow: -3px -2px 23px 22px rgba(245,245,245,1);
     }
 
  
@@ -271,6 +277,7 @@ body html{
         text-align: center;
         padding:5px;
         justify-content: space-between;
+        font-weight: 600;
 
         
     }
@@ -326,7 +333,7 @@ body html{
         padding-top: 25px;
         margin:25px ;
         font-size: 30px;
-        justify-content: center;
+        justify-content: flex-start;
         text-align: center;
         align-content: space-between;
         width: 50%;
@@ -406,14 +413,14 @@ body html{
         display: flex;
         width: 100%;
         height: 0 auto;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
     }
 
 
     .item__menu{
         display: flex;
-        width: 25%;
+        width: 16%;
         height: 0 auto;
         flex-direction: column;
         justify-content: center;
@@ -497,9 +504,10 @@ body html{
     .section__mostPopular{
         margin-top: 50px;
     }
-    .mostPopular{
-        /* box-shadow: 20px 17px 5px -2px rgba(224,224,224,1); */
-    }
+
+    /* .mostPopular{
+        box-shadow: 20px 17px 5px -2px rgba(224,224,224,1); 
+    } */
 
     .container__mostPopular{
         display: flex;
@@ -766,12 +774,22 @@ body html{
          color: rgba(54, 51, 51, 0.863);
      }
 
+     .container_price{
+        display: flex; align-items: center; 
+        font-size: 1em;
+
+     }
+
     
      #mail img{
          width: 30px;
          height: 30px;
          margin: 10px;
         
+     }
+     .precio_mostpopular{
+        color: #ffbe00;
+
      }
 
      @media  screen and (max-width:1024px){
@@ -830,8 +848,26 @@ body html{
 
 
      @media  screen and (min-width:319px)  and (max-width:467px){
+
+
+
+        .container_price{
+            display: block;
+             align-items: center; 
+            font-size: 1em;
+         }
+         
+        .precio_mostpopular{
+            font-size: 0.8em;
+        }
          .hero__section--social{
              display: none;
+         }
+
+         .carousel{
+             width: 100%;
+             margin: 0;
+             padding: 0;
          }
 
        .menu-nav-left{
@@ -853,10 +889,12 @@ body html{
 
          .container__section-mediun{
              display: block;
+             width: 100%;
 
          }
          .container__mediun--image{
-             width: 75%;
+             width: 100%;
+             justify-content: center;
          }
          .container__mediun--description{
              width: 100%;
