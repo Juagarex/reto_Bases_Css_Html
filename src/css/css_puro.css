@@ -225,8 +225,10 @@ body html{
     .carousel{
         width: 100%;
         display: flex;
+        min-height: 20 0px;
         height: 0 auto;
         padding: 5px;
+        background-color: #fafafa;
     }
     .container__carousel{
         border-radius: 15px;
@@ -241,12 +243,11 @@ body html{
         
         display: flex;
         border-radius: 25px;
-        border: 1px solid black;
         margin: 20px;
         min-width: 220px;
         max-width: 180px;
         height: 0 auto;
-
+background-color: white;
         
         
     }
@@ -425,8 +426,10 @@ body html{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        border-radius: 15%;
-        
+        background-color: white;
+        border-radius: 5%;
+        padding: 20px;
+                
         
     }
 
@@ -503,6 +506,7 @@ body html{
 
     .section__mostPopular{
         margin-top: 50px;
+        background-color: #fafafa;
     }
 
     /* .mostPopular{
@@ -523,7 +527,6 @@ body html{
 
     .mostPopular img {
         background-color: rgb(240, 240, 226);
-        border-radius: 46%;
         width: 80%;
         height: 0 auto;
         padding: 0 auto;
