@@ -252,10 +252,6 @@ background-color: white;
 
     }
 
-    .swiper-slide{
-        border: 1px solid red;  
-    }
-
     .item__carousel--image{
         justify-content: center;
         align-items: center;
