@@ -6,6 +6,7 @@
  body{
     background-color:  linear-gradient(snow,#ffffff);
     /* background: linear-gradient(calc(100vh - 100px) #fefcf7,#ffffff); */
+    overflow-x: hidden;
  }
 
 .debuger{
@@ -252,6 +253,7 @@ background-color: white;
 
     }
 
+
     .item__carousel--image{
         justify-content: center;
         align-items: center;
@@ -363,7 +365,7 @@ background-color: white;
     }
 
     .container__mediun--description--text img{
-        width: 100%;
+        width: 70%;
         height: 0 auto;
     }
 
@@ -417,6 +419,10 @@ background-color: white;
         justify-content: space-evenly;
 
     }
+    .image_explore{
+        position: relative;
+        top: 160px;
+    }
 
 
     .item__menu{
@@ -427,8 +433,9 @@ background-color: white;
         justify-content: center;
         text-align: center;
         background-color: white;
-        border-radius: 5%;
-        padding: 20px;
+        border-radius: 15%;
+        overflow:auto;
+        
                 
         
     }
@@ -507,7 +514,7 @@ background-color: white;
 
     .section__mostPopular{
         margin-top: 50px;
-        background-color: #fafafa;
+        background-color: #fafaf1;
     }
 
     /* .mostPopular{
@@ -527,8 +534,8 @@ background-color: white;
 
 
     .mostPopular img {
-        background-color: rgb(240, 240, 226);
-        width: 80%;
+       
+        width: 100%;
         height: 0 auto;
         padding: 0 auto;
         margin: 0 auto;
@@ -732,7 +739,7 @@ background-color: white;
          padding: 50px 0;
          width: 100%;
          display: flex;
-         justify-content: space-around;
+         justify-content: center;
          background-color: #f8f6f1;
 
          
@@ -740,16 +747,17 @@ background-color: white;
 
      
      .list__container--footer {
+         width: 38%;
          display: flex;
       justify-content: space-between;
-      font-size: 13px;
+      font-size: 23px;
 
      }
 
      .container__footer--info{
-         display: flex;
+       
          justify-content: space-around;
-         width: 50%;
+         width: 40%;
 
      }
      .container__footer--info p{
@@ -763,10 +771,12 @@ background-color: white;
          width: 100%;
          display: flex;
          object-fit: cover;
-         justify-content: center;
+         justify-content: flex-start;
+         position: relative;
+         right: 111px;
      }
      .container__img--footer img{
-         width: 100%;
+         width: 20%;
          object-fit: contain;
      }
 
@@ -774,7 +784,8 @@ background-color: white;
 
      .list_footer__social{
          display: flex;
-         align-items: center;        
+         align-items: center;  
+         text-decoration: underline;      
      }
 
      .list_footer li{
