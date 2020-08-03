@@ -881,6 +881,39 @@ background-color: white;
 
 
      @media  screen and (min-width:319px)  and (max-width:467px){
+        .image_explore {
+            position: relative;
+            top: 64px;
+        }
+        .item__menu--description span:nth-of-type(1) {
+            font-size: 0.5em;
+        }
+         .item__menu--description{
+             padding: 0;
+             align-items: center;
+         }
+         .button__addCart{
+             margin: 0;
+         }
+         .item__menu--description button:first-of-type {
+            font-size: 0.7em;
+        }
+        .item__menu--description span:nth-of-type(2) {
+            font-size: 0.5em;
+            text-align: center;
+        }
+         .container__recibes--description {
+             word-spacing: 0px;
+             letter-spacing: 0.1em;
+             font-size: 15px;
+             line-height: 26px;
+
+         }
+         .header_recibes 
+
+         .list__container--footer{
+             font-size: 15px;
+         }
          .container__mobile{
              flex-direction: column;
          }
@@ -898,7 +931,7 @@ background-color: white;
         .container_price{
             display: block;
              align-items: center; 
-            font-size: 1em;
+            font-size: 0.5em;
          }
          
         .precio_mostpopular{
