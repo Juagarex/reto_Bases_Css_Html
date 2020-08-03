@@ -900,6 +900,9 @@ background-color: white;
 
 
      @media  screen and  (max-width:467px) and (min-width:319px) {
+         .section__medium{
+             display: block;
+         }
          .hero__section--menssage{
             width: 65%;
             justify-content: center;
