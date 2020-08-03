@@ -874,6 +874,10 @@ background-color: white;
 
         }
 
+        .list__container--footer{
+            font-size: 18px;
+        }
+
 
 
 
@@ -1032,6 +1036,12 @@ background-color: white;
          .container__img--footer img{
              width: 30%;
              justify-content: center;
+         }
+         .list__container--footer{
+             font-size: 15px;
+         }
+         .container__img--footer{
+             display: none;
          }
 
 
