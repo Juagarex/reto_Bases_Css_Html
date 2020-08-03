@@ -130,15 +130,16 @@ body html{
     .image__section--image{
         position: absolute;      
         left: 20%;
-        width: 40%;  
-        top:0;
-        bottom:0;
-        background-image: url('../images/pechuga.png');
-        background-repeat: none;
-        background-size: cover;
-        background-position: center;
-
+        width: 40%;
+        height: 0 auto;
+        border: 1px solid red;
+        bottom: 50px;
         
+        }
+
+        .image__section--image img{
+            width: 90%;
+            height: 0 auto;
         }
 
     .hero__section--selector{
@@ -826,6 +827,9 @@ background-color: white;
      }
 
      @media  screen and (max-width:1024px){
+         .selector{
+             display: none;
+         }
 
 
         .container__mediun--description--text{
@@ -837,7 +841,7 @@ background-color: white;
         .image__section--image{
             position: absolute;      
             left: 20%;
-            width: 50%;  
+            width: 60%;  
         }
         .hero__section--menssage{
             width: 100%; 
@@ -860,13 +864,19 @@ background-color: white;
         }
 
 
+        .menu-nav-rigth{
+            display: none;
+        }
 
-
+     
 
      }
 
      
-     @media  screen and (max-width:768px){
+     @media  screen and  (max-width:768)  {
+
+         
+
          
         .list_footer ol{
             padding-inline-start: .5em;
@@ -878,13 +888,29 @@ background-color: white;
             font-size: 18px;
         }
 
+        .selector{
+            display: none;
+        }
+        
+
 
 
 
      }
 
 
-     @media  screen and (min-width:319px)  and (max-width:467px){
+     @media  screen and  (max-width:467px) and (min-width:319px) {
+         .hero__section--menssage{
+            width: 65%;
+            justify-content: center;
+            text-align: center;
+            height: 0 auto;
+         }
+
+        .image__section--image img{
+            width: 100%;
+            bottom: 10px;
+        }
         .image_explore {
             position: relative;
             top: 64px;
@@ -1038,7 +1064,7 @@ background-color: white;
              justify-content: center;
          }
          .list__container--footer{
-             font-size: 15px;
+             font-size: 13px;
          }
          .container__img--footer{
              display: none;
