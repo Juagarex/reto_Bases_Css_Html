@@ -1003,6 +1003,9 @@ background-color: white;
              width: 100%;
              justify-content: center;
          }
+         .container__mediun--image img{
+            width: 100%;
+         }
          .container__mediun--description{
              width: 100%;
              margin: 0;
